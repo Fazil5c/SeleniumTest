@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="E:/IdeaProjects/SeleniumTest/MavenProject/src/main/java/Test1.java">
+    <test verbose="2" preserve-order="true" name="E:/IdeaProjects/SeleniumTest/MavenProject/src/main/java/TestCases/TestCase1.java">
        <classes>
-           <class name="UtilClass"/>
+           <class name="TestCases.TestCase1"/>
        </classes>
     </test>
 </suite>
