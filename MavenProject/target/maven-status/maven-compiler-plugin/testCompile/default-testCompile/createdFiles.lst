@@ -1,2 +1,2 @@
-TestCases\TestCase1.class
-Util\UtilClass.class
+com\crm\qa\extentreport\ExtentReporterNG.class
+com\crm\qa\testcases\LoginPageTest.class
