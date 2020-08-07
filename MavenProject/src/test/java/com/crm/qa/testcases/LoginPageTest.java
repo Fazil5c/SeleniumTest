@@ -4,11 +4,14 @@ import com.crm.qa.base.TestBase;
 import com.crm.qa.pages.HomePage;
 import com.crm.qa.pages.LandingPage;
 import com.crm.qa.pages.LoginPage;
+import com.crm.qa.util.TestUtil;
 import javafx.scene.layout.Priority;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import java.io.IOException;
 
 public class LoginPageTest extends TestBase {
     LandingPage landingPage;
@@ -22,22 +25,25 @@ public class LoginPageTest extends TestBase {
     @BeforeMethod
     public void setUp() {
         TestBase.initialization();
-        landingPage = new LandingPage();
     }
 
-    @Test(priority = 0)
-    public void landingPageTitleTest() {
-        String title = landingPage.validateLandingPageTitle();
-    }
+    @Test
+    public void validateLoginPage() throws IOException {
+        LandingPage landingPageObject = new LandingPage();
+        landingPageObject.validateLandingPageTitle()
+                .validateLandingPageTitle()
+                .clickSignIn()
+                .validateLoginPageTitle()
+                .enterUserName(prop.getProperty("username"))
+                .enterPassword(prop.getProperty("password"))
+                .clickLoginButton()
+                .validateHomePageTitle();
 
-    @Test(priority = 1)
-    public void validateLoginToTheApplication() {
-        loginPage = landingPage.clickSignIn();
-        homePage = loginPage.loginToApplication(prop.getProperty("username"), prop.getProperty("password"));
     }
 
     @AfterMethod
-    public void tearDown() {
+    public void tearDown() throws IOException {
+        TestUtil.takeScreenshotAtEndOfTest();
         driver.quit();
     }
 
