@@ -4,7 +4,7 @@
     <listeners>
         <listener class-name="com.crm.qa.extentreport.ExtentReporterNG"></listener>
     </listeners>
-    <test verbose="2" preserve-order="true" name="E:/IdeaProjects/SeleniumTest/MavenProject/src/main/java/TestCases/TestCase1.java">
+    <test verbose="2" preserve-order="true" name="E:/IdeaProjects/SeleniumTest/MavenProject/src/test/java/TestCases/LoginPageTest.java">
        <classes>
            <class name="com.crm.qa.testcases.LoginPageTest"/>
        </classes>
