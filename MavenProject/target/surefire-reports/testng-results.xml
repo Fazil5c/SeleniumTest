@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="All Test Suite" duration-ms="28851" started-at="2020-08-08T10:57:17Z" finished-at="2020-08-08T10:57:45Z">
+    <groups>
+    </groups>
+    <test name="E:/IdeaProjects/SeleniumTest/MavenProject/src/test/java/TestCases/LoginPageTest.java" duration-ms="28851" started-at="2020-08-08T10:57:17Z" finished-at="2020-08-08T10:57:45Z">
+      <class name="com.crm.qa.testcases.LoginPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@573f2bb1]" name="setUp" is-config="true" duration-ms="16292" started-at="2020-08-08T10:57:17Z" finished-at="2020-08-08T10:57:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateLoginPage()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@573f2bb1]" name="validateLoginPage" duration-ms="9947" started-at="2020-08-08T10:57:33Z" finished-at="2020-08-08T10:57:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLoginPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@573f2bb1]" name="tearDown" is-config="true" duration-ms="2551" started-at="2020-08-08T10:57:43Z" finished-at="2020-08-08T10:57:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.crm.qa.testcases.LoginPageTest -->
+    </test> <!-- E:/IdeaProjects/SeleniumTest/MavenProject/src/test/java/TestCases/LoginPageTest.java -->
+  </suite> <!-- All Test Suite -->
+</testng-results>
